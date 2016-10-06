@@ -11,6 +11,8 @@ module.exports = class CredentialStore
 
   @SNEAKER_SUPPORTED = do ->
 
+    return no
+
     for key, val of KONFIG.sneakerS3
       return no  if not val or val is ''
 
